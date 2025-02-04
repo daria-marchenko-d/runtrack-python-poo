@@ -3,38 +3,38 @@ class Point:
         self.x = x
         self.y = y
 
-    def afficherLesPoints(self):
-        print(f"Coordonnées du point : ({self.x}, {self.y})")
+    def displayPoints(self):
+        print(f"Point coordinates : ({self.x}, {self.y})")
 
-    def afficherX(self):
-        print(f"Valeur de x : {self.x}")
+    def displayX(self):
+        print(f"Value of x : {self.x}")
 
-    def afficherY(self):
-        print(f"Valeur de y : {self.y}")
+    def displayY(self):
+        print(f"Value of y : {self.y}")
 
-    def changerX(self, new_x):
+    def changeX(self, new_x):
         self.x = new_x
 
-    def changerY(self, new_y):
+    def changeY(self, new_y):
         self.y = new_y
 
 
-def creer_point():
+def create_point():
     x = 2
     y = 3
     return Point(x, y) 
 
-# Instanciation d'un point avec les valeurs saisies par l'utilisateur
-point = creer_point()
+# Instantiating a point with user-entered values
+point = create_point()
 
 
-point.afficherLesPoints()
+point.displayPoints()
 
 
-point.afficherX()
-point.afficherY()
+point.displayX()
+point.displayY()
 
-point.changerX(7)
-point.changerY(25)
+point.changeX(7)
+point.changeY(25)
 
-point.afficherLesPoints()
+point.displayPoints()

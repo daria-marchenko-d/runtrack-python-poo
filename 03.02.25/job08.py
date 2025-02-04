@@ -1,32 +1,32 @@
 import math
 
-class Cercle:
-    def __init__(self, rayon):
-        # Initialisation du rayon du cercle
-        self.rayon = rayon
+class Circle:
+    def __init__(self, radius):
+        # Initializing the circle radius
+        self.radius = radius
 
-    def changerRayon(self, new_rayon):
-        self.rayon = new_rayon
+    def changeRadius(self, new_radius):
+        self.radius = new_radius
 
-    def afficherInfos(self):
-        print(f"Cercle de rayon : {self.rayon}")
-        print(f"Diamètre : {self.diametre()}")
-        print(f"Circonférence : {self.circonference():.2f}")
-        print(f"Aire : {self.aire():.2f}")
+    def displayInfos(self):
+        print(f"The circle radius : {self.radius}")
+        print(f"Diameter : {self.diameter()}")
+        print(f"Circumference : {self.circumference():.2f}")
+        print(f"Area : {self.area():.2f}")
 
-    def circonference(self):
-        return 2 * math.pi * self.rayon
+    def circumference(self):
+        return 2 * math.pi * self.radius
 
-    def aire(self):
-        return math.pi * self.rayon ** 2
+    def area(self):
+        return math.pi * self.radius ** 2
 
-    def diametre(self):
-        return 2 * self.rayon
+    def diameter(self):
+        return 2 * self.radius
 
-cercle1 = Cercle(4)
-cercle2 = Cercle(7)
+circle1 = Circle(4)
+circle2 = Circle(7)
 
-print("Informations du premier cercle :")
-cercle1.afficherInfos()
-print("\nInformations du deuxième cercle :")
-cercle2.afficherInfos()
+print("First Circle Information :")
+circle1.displayInfos()
+print("\nSecond Circle Information :")
+circle2.displayInfos()

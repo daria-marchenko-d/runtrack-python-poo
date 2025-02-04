@@ -29,7 +29,7 @@ class Produit:
         return self.calculerPrixTTC()
 
 
-# Création de plusieurs produits
+# Creation of multiple products
 product1 = Produit("Leptop", 1000, 20)
 product2 = Produit("Smartphone", 800, 20)
 product3 = Produit("Chair", 150, 5)
@@ -45,7 +45,7 @@ product1.changePrix(1200)
 product2.changeNom("Smartphone Ultra")
 product2.changePrix(850)
 
-product3.changeNom("Chair ergonomique")
+product3.changeNom("Ergonomic chair")
 product3.changePrix(200)
 
 print("\nAfter products modification :")

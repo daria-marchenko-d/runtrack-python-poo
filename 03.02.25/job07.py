@@ -3,36 +3,36 @@ class Personnage:
         self.x = x
         self.y = y
 
-    def gauche(self, nomb=1):
-        self.x -= nomb
+    def left(self, numb=1):
+        self.x -= numb
 
-    def droite(self, nomb=1):
-        self.x += nomb
+    def right(self, numb=1):
+        self.x += numb
 
-    def haut(self, nomb=1):
-        self.y -= nomb
+    def up(self, numb=1):
+        self.y -= numb
 
-    def bas(self, nomb=1):
-        self.y += nomb
+    def down(self, numb=1):
+        self.y += numb
 
     def position(self):
         return (self.x, self.y)
 
-# Instanciation du personnage
+# Character instantiation
 personnage = Personnage()
 
 
-print("Position initiale :", personnage.position())
+print("Initial position :", personnage.position())
 
-dep_gauche = 2
-dep_droite = 3
-dep_haut = 4
-dep_bas = 5
+dep_left = 2
+dep_right = 3
+dep_up = 4
+dep_down = 5
 
 
-personnage.gauche(dep_gauche)
-personnage.droite(dep_droite)
-personnage.haut(dep_haut)
-personnage.bas(dep_bas)
+personnage.left(dep_left)
+personnage.right(dep_right)
+personnage.up(dep_up)
+personnage.down(dep_down)
 
-print("Nouvelle position :", personnage.position())
+print("New position :", personnage.position())
