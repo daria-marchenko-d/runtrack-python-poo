@@ -1,40 +1,30 @@
 class Point:
-    def __init__(self, x, y):
+    def __init__(self, x=0, y=0):
         self.x = x
         self.y = y
-
-    def displayPoints(self):
-        print(f"Point coordinates : ({self.x}, {self.y})")
-
-    def displayX(self):
-        print(f"Value of x : {self.x}")
-
-    def displayY(self):
-        print(f"Value of y : {self.y}")
-
-    def changeX(self, new_x):
+    def afficherLesPoints(self):
+        print(f"Les coordonnées des points sont: {self.x} et {self.y}")
+    def afficherX(self):
+        print(f"X est: {self.x}")
+    def afficherY(self):
+        print(f"Y est: {self.y}")
+    def changerX(self, new_x):
         self.x = new_x
-
-    def changeY(self, new_y):
+    def changerY(self, new_y):
         self.y = new_y
+def creer_points():
+    return Point(5,10)    
+
+point = creer_points()
 
 
-def create_point():
-    x = 2
-    y = 3
-    return Point(x, y) 
-
-# Instantiating a point with user-entered values
-point = create_point()
+point.afficherLesPoints()
 
 
-point.displayPoints()
+point.afficherX()
+point.afficherY()
 
+point.changerX(20)
+point.changerY(15)
 
-point.displayX()
-point.displayY()
-
-point.changeX(7)
-point.changeY(25)
-
-point.displayPoints()
+point.afficherLesPoints()

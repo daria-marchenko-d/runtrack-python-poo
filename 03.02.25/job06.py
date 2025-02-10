@@ -1,24 +1,18 @@
 class Animal:
-    def __init__(self):
-        self.age = 0
-        self.surname = ""
+    def __init__(self, age=0, prenom=""):
+        self.age = age
+        self.prenom = prenom
+    def vieillir(self):
+        self.age +=1
+    def nommer (self, nom):
+        self.nom = nom
 
-    def ages(self):
-        self.age += 1
-
-    def name(self, name):
-        self.surname = name
-
-# Instanciation de l'objet Animal
 animal = Animal()
 
+print(f"L'age de l'animal {animal.age} ans")
 
-print("The age of the animal :", animal.age)
+animal.vieillir()
+print(f"L'age de l'animal {animal.age} ans")
 
-
-animal.ages()
-print("The age of the animal as it ages:", animal.age)
-
-
-animal.name("Trito")
-print("The animal is named :", animal.surname)
+animal.nommer("Luna")
+print(f"Le nom est {animal.nom}")
